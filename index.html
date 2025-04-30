@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Air Purifier - Premium Air Quality Solutions</title>
     <meta name="description" content="Find the perfect air purifier for UAE weather. Premium selection of Dyson and Levoit air purifiers with worldwide shipping.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Announcement Bar -->
@@ -18,20 +34,34 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/" class="text-2xl font-bold text-gray-800">Best Air Purifier</a>
+                <a href="https://gsultanshah.github.io/best-air-purifier-2025-04-30-47sxh" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300">Best Air Purifier</a>
             </div>
             
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
-                <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
-                <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
-                <a href="https://stripe.com/buy" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">Buy Now</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About Us</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="https://stripe.com/buy" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Buy Now</a>
             </div>
             
-            <button class="md:hidden text-gray-600">
+            <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="px-4 py-2 space-y-4">
+                <a href="#features" class="block text-gray-600 hover:text-blue-600 py-2 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-600 hover:text-blue-600 py-2 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block text-gray-600 hover:text-blue-600 py-2 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block text-gray-600 hover:text-blue-600 py-2 transition-colors duration-300">About Us</a>
+                <a href="#faq" class="block text-gray-600 hover:text-blue-600 py-2 transition-colors duration-300">FAQ</a>
+                <a href="https://stripe.com/buy" class="block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 text-center">Buy Now</a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -43,9 +73,9 @@
         
         <div class="relative container mx-auto px-4 h-full flex items-center">
             <div class="max-w-4xl mx-auto text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Best Air Purifier</h1>
-                <p class="text-xl md:text-2xl mb-8">Find Best Air Purifier</p>
-                <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">Shop Now</a>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Experience Pure Air Like Never Before</h1>
+                <p class="text-xl md:text-2xl mb-8">Discover our premium selection of air purifiers designed for ultimate air quality</p>
+                <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Shop Now</a>
             </div>
         </div>
     </section>
@@ -62,7 +92,7 @@
                         <i class="fas fa-fan text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Dyson Air Purifier</h3>
-                    <p class="text-gray-600">Advanced air filtration technology with smart sensing capabilities.</p>
+                    <p class="text-gray-600">Advanced air filtration technology with smart sensing capabilities and automated air quality monitoring. Features HEPA filtration and activated carbon filters.</p>
                 </div>
 
                 <!-- Levoit Card -->
@@ -71,7 +101,7 @@
                         <i class="fas fa-wind text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Levoit Air Purifier</h3>
-                    <p class="text-gray-600">Efficient purification with whisper-quiet operation.</p>
+                    <p class="text-gray-600">Whisper-quiet operation with advanced three-stage filtration system. Perfect for bedrooms and living spaces with energy-efficient performance.</p>
                 </div>
 
                 <!-- Humidifier Card -->
@@ -80,7 +110,7 @@
                         <i class="fas fa-tint text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Built-in Humidifier</h3>
-                    <p class="text-gray-600">Maintain optimal humidity levels for maximum comfort.</p>
+                    <p class="text-gray-600">Integrated humidification system maintains optimal moisture levels while purifying. Features automatic humidity sensing and adjustable output levels.</p>
                 </div>
             </div>
         </div>
@@ -93,12 +123,12 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6">Best for UAE Weather</h2>
-                        <p class="text-gray-600 mb-6">Specially designed to handle the unique challenges of UAE's climate, providing optimal air quality in hot and humid conditions.</p>
-                        <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300">Learn More</a>
+                        <h2 class="text-3xl font-bold mb-6">Optimized for UAE Climate</h2>
+                        <p class="text-gray-600 mb-6">Specifically engineered to combat the unique challenges of UAE's desert climate. Our air purifiers excel in filtering dust, sand particles, and maintaining optimal humidity levels in extreme conditions. With advanced temperature compensation and humidity control, they ensure consistent performance even during the hottest months.</p>
+                        <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Learn More</a>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="UAE Weather Benefit" class="rounded-2xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="UAE Weather Benefit" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
                 </div>
             </div>
@@ -109,12 +139,12 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Advanced Filtration" class="rounded-2xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Advanced Filtration" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
                     <div>
                         <h2 class="text-3xl font-bold mb-6">Advanced Filtration Technology</h2>
-                        <p class="text-gray-600 mb-6">Multi-stage filtration system removes 99.97% of airborne particles as small as 0.3 microns.</p>
-                        <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300">Discover More</a>
+                        <p class="text-gray-600 mb-6">Our cutting-edge multi-stage filtration system removes 99.97% of airborne particles as small as 0.3 microns. Featuring medical-grade HEPA filters, activated carbon layers, and UV-C light sterilization, it effectively eliminates allergens, bacteria, viruses, and harmful VOCs. The intelligent sensor system continuously monitors air quality and adjusts filtration levels automatically.</p>
+                        <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -126,13 +156,87 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
                         <h2 class="text-3xl font-bold mb-6">Smart Home Integration</h2>
-                        <p class="text-gray-600 mb-6">Seamlessly connect with your smart home devices for automated air quality management.</p>
-                        <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300">Get Started</a>
+                        <p class="text-gray-600 mb-6">Seamlessly connect with your smart home ecosystem through WiFi and Bluetooth connectivity. Compatible with Amazon Alexa, Google Assistant, and Apple HomeKit for voice control and automated scheduling. Monitor air quality, adjust settings, and receive maintenance alerts through our intuitive mobile app. Create custom schedules and automation routines for optimal air quality management.</p>
+                        <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Get Started</a>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Smart Integration" class="rounded-2xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Smart Integration" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"The air quality sensor is incredibly accurate. I can literally see the difference in air quality readings when cooking or cleaning. Perfect for my Dubai apartment!"</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Sarah M.</p>
+                        <p class="text-sm text-gray-500">Interior Designer, Dubai</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"We installed these purifiers in our office, and the difference is remarkable. Employee allergies have decreased, and the smart features make maintenance a breeze."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Ahmed K.</p>
+                        <p class="text-sm text-gray-500">Office Manager, Abu Dhabi</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"The mobile app integration is fantastic! I can monitor air quality from anywhere and adjust settings remotely. Energy consumption is also surprisingly low."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Lisa R.</p>
+                        <p class="text-sm text-gray-500">Tech Consultant, Sharjah</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"As someone with asthma, this air purifier has been life-changing. The automatic mode adjusts perfectly to environmental changes, and the night mode is whisper-quiet."</p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold">Mohammed H.</p>
+                        <p class="text-sm text-gray-500">Healthcare Professional, RAK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+            
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">
+                    Founded in 2018, Best Air Purifier emerged from a simple yet powerful vision: to provide UAE residents with superior air quality solutions. Our journey began when our founder, experiencing the challenges of desert climate firsthand, realized the need for air purifiers specifically designed for the region's unique environmental conditions.
+                </p>
+                
+                <p class="text-gray-600">
+                    Today, we're committed to our core values of innovation, sustainability, and customer satisfaction. We believe everyone deserves to breathe clean air, which is why we continuously invest in research and development to bring you the most advanced air purification technology. Our mission is to improve indoor air quality while providing exceptional service and support to our growing community of satisfied customers.
+                </p>
             </div>
         </div>
     </section>
@@ -143,29 +247,50 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-lg shadow-md">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                     <button class="w-full px-6 py-4 text-left focus:outline-none">
                         <div class="flex items-center justify-between">
                             <span class="font-semibold">How often should I replace the filters?</span>
                             <i class="fas fa-plus text-blue-600"></i>
                         </div>
+                        <div class="mt-2 text-gray-600 hidden">
+                            HEPA filters should be replaced every 6-12 months depending on usage and air quality conditions. The app will notify you when it's time for replacement. Carbon filters typically last 3-6 months.
+                        </div>
                     </button>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                     <button class="w-full px-6 py-4 text-left focus:outline-none">
                         <div class="flex items-center justify-between">
                             <span class="font-semibold">What area can these purifiers cover?</span>
                             <i class="fas fa-plus text-blue-600"></i>
                         </div>
+                        <div class="mt-2 text-gray-600 hidden">
+                            Our models range from 200 to 800 square feet of coverage. The recommended model depends on your room size and ceiling height. Our smart sensors ensure optimal performance within the specified coverage area.
+                        </div>
                     </button>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                     <button class="w-full px-6 py-4 text-left focus:outline-none">
                         <div class="flex items-center justify-between">
                             <span class="font-semibold">Are these suitable for bedrooms?</span>
                             <i class="fas fa-plus text-blue-600"></i>
+                        </div>
+                        <div class="mt-2 text-gray-600 hidden">
+                            Yes, all our models feature ultra-quiet operation (as low as 24dB) and night mode with dimmed lights. The smart sensors automatically adjust fan speed based on air quality, ensuring peaceful sleep.
+                        </div>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                    <button class="w-full px-6 py-4 text-left focus:outline-none">
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold">How does the smart home integration work?</span>
+                            <i class="fas fa-plus text-blue-600"></i>
+                        </div>
+                        <div class="mt-2 text-gray-600 hidden">
+                            Our purifiers connect via WiFi and are compatible with major smart home platforms. You can control settings through voice commands, set schedules, and monitor air quality through our mobile app.
                         </div>
                     </button>
                 </div>
@@ -175,10 +300,13 @@
 
     <!-- CTA Section -->
     <section class="relative py-24 bg-gray-900 text-white">
-        <div class="container mx-auto px-4 text-center">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1585504198199-20277593b94f?w=1600&h=800&fit=crop&q=80" alt="Clean Air Background" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Breathe Cleaner Air?</h2>
-            <p class="text-xl mb-8">Experience the difference with our premium air purifiers</p>
-            <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">Shop Now</a>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers who have transformed their indoor air quality. Order now and experience the difference.</p>
+            <a href="https://stripe.com/buy" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Shop Now</a>
         </div>
     </section>
 
@@ -194,14 +322,18 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <p class="text-gray-400">Email: contact@bestairpurifier.org</p>
+                    <p class="text-gray-400">Phone: +971 50 123 4567</p>
+                    <p class="text-gray-400">Location: Dubai, UAE</p>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Policies</h4>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://gsultanshah.github.io/best-air-purifier-2025-04-30-47sxh/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://gsultanshah.github.io/best-air-purifier-2025-04-30-47sxh/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://gsultanshah.github.io/best-air-purifier-2025-04-30-47sxh/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                         <li><a href="#" class="hover:text-white transition-colors duration-300">Shipping Policy</a></li>
                         <li><a href="#" class="hover:text-white transition-colors duration-300">Return Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
                     </ul>
                 </div>
                 
@@ -209,13 +341,16 @@
                     <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-facebook-f text-xl"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-twitter text-xl"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
                         </a>
                     </div>
                 </div>
@@ -226,5 +361,48 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Toggle
+            const faqButtons = document.querySelectorAll('#faq button');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const answer = button.querySelector('div:last-child');
+                    const icon = button.querySelector('i');
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('fa-plus');
+                    icon.classList.toggle('fa-minus');
+                });
+            });
+        });
+    </script>
+</body>
 </body>
 </html>
